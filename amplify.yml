@@ -7,10 +7,6 @@ backend:
         - amplify --version
         - echo "Checking the IAM role authentication"
         - aws sts get-caller-identity
-        - amplify pull --appId $AWS_APP_IDnpm install -g @aws-amplify/cli
-        - amplify --version
-        - echo "Checking the IAM role authentication"
-        - aws sts get-caller-identity
         - npx ampx pipeline-deploy --branch $BRANCH_NAME --app-id $AWS_APP_ID
 frontend:
   phases:
