@@ -11,7 +11,7 @@ backend:
         - amplify --version
         - echo "Checking the IAM role authentication"
         - aws sts get-caller-identity
-        - amplify pull --appId $AWS_APP_ID
+        - amplify pull
 frontend:
   phases:
     build:
