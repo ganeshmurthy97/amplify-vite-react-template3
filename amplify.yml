@@ -11,7 +11,7 @@ backend:
         - amplify --version
         - echo "Checking the IAM role authentication"
         - aws sts get-caller-identity
-        - amplify pull
+        - npx ampx pipeline-deploy --branch $BRANCH_NAME --app-id $AWS_APP_ID
 frontend:
   phases:
     build:
